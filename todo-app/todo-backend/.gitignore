@@ -62,3 +62,4 @@ typings/
 
 # For data persistency
 mongo_data
+redis_data
