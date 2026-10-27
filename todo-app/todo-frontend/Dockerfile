@@ -5,6 +5,7 @@ COPY . .
 
 RUN npm ci
 
+RUN npm run test
 RUN npm run build
 
 FROM nginx:alpine AS production-stage
