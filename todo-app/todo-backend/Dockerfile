@@ -2,9 +2,11 @@ FROM node:24
 
 WORKDIR /usr/src/app
 
-COPY --chown=node:node . .
+COPY package*.json ./
 
 RUN npm ci --omit=dev
+
+COPY --chown=node:node . .
 
 EXPOSE 3000
 

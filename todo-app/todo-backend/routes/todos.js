@@ -47,10 +47,10 @@ singleRouter.put('/', async (req, res) => {
   // res.sendStatus(405); // Implement this
   // const { id } = req.params
   try {
-    if (req.body.text) {
+    if (req.body.text !== undefined) {
       req.todo.text = req.body.text
     }
-    if (req.body.done) {
+    if (req.body.done !== undefined) {
       req.todo.done = req.body.done
     }
     const updatedTodo = await req.todo.save();
