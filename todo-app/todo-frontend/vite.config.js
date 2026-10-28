@@ -8,7 +8,8 @@ export default defineConfig({
     host: true,
     watch: {
       usePolling: true
-    }
+    },
+    allowedHosts: ['frontend']
   },
   test: {
     environment: 'jsdom',
