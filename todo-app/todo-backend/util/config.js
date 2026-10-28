@@ -5,3 +5,4 @@ module.exports = {
   MONGO_URL,
   REDIS_URL
 }
+// console.log("MONGO_URL", MONGO_URL)
